@@ -96,3 +96,49 @@ footer ul {
     padding: 0;
     margin: 0;
 }
+/* Estilos del modo oscuro */
+
+body.modo-oscuro {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro aside,
+body.modo-oscuro main,
+body.modo-oscuro footer {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+body.modo-oscuro a {
+    color: #8ab4f8;
+}
+
+body.modo-oscuro main h2,
+body.modo-oscuro main h3 {
+    border-bottom-color: #666666;
+}
+/* Estilos de los tamaños de letra */
+
+main.tamano-pequeno {
+    font-size: 14px;
+}
+
+main.tamano-estandar {
+    font-size: 16px;
+}
+
+main.tamano-grande {
+    font-size: 20px;
+}
+/* Estilos de los botones de apariencia */
+
+.panel-apariencia button {
+    cursor: pointer;
+}
+
+.boton-tamano.activo {
+    font-weight: bold;
+    border: 2px solid #555555;
+}

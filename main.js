@@ -16,3 +16,16 @@ titulos.forEach(function(titulo) {
     indiceAutomatico.append(elementoLista);
 });
 
+// Funcionalidad del modo oscuro
+
+const botonModo = document.querySelector("#boton-modo");
+
+botonModo.addEventListener("click", function() {
+    document.body.classList.toggle("modo-oscuro");
+
+    if (document.body.classList.contains("modo-oscuro")) {
+        botonModo.textContent = "Modo claro";
+    } else {
+        botonModo.textContent = "Modo oscuro";
+    }
+});
