@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Rojas</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -18,23 +19,40 @@
         </header>
 
         <aside>
-            <ul>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#comienzos">Comienzos</a></li>
-                <li><a href="#nocheros">Los Nocheros</a></li>
-                <li><a href="#solista">Carrera Solista</a></li>
-                <li><a href="#discografia">Discografía</a></li>
-                <li><a href="#discosbanda">Discos con Los Nocheros</a></li>
-                <li><a href="#discossolo">Discos de Solista</a></li>
-            </ul>
-        </aside>
+    <h2>Índice</h2>
+
+    <ul id="indice-automatico">
+    </ul>
+
+    <div class="panel-apariencia">
+        <h2>Apariencia</h2>
+
+        <button type="button" id="boton-modo">
+            Modo oscuro
+        </button>
+
+        <div class="controles-tamano">
+            <button type="button" class="boton-tamano" data-tamano="pequeno">
+                Pequeño
+            </button>
+
+            <button type="button" class="boton-tamano activo" data-tamano="estandar">
+                Estándar
+            </button>
+
+            <button type="button" class="boton-tamano" data-tamano="grande">
+                Grande
+            </button>
+        </div>
+    </div>
+    </aside>
 
         <main>
 
             <img src="./imagenes/jorge_rojas.jpg" alt="imagen jorge rojas">
 
             <p>Raúl Jorge Rojas Palomo (Cutral Có, Neuquén, 4 de marzo de 1972) es un cantautor, compositor y productor argentino. Entre 1993 y 2005 integró el grupo Los Nocheros con el que alcanzó la fama.[1] Desde entonces lleva adelante una carrera solista, siendo autor de canciones como "No saber de ti", "Cuando se enferma el amor" y "Búscalo en tu corazón", entre otras. Además, es un muy reconocido productor de varios álbumes de reconocidos artistas argentinos, como el Chaqueño Palavecino y Los Carabajal.</p>
-
+            <section>
             <h2 id="biografia">Biografía</h2>
 
             <h3 id="comienzos">Comienzos</h3>
@@ -78,7 +96,8 @@ En 2007 lanzó su segundo álbum de estudio, Jorge Rojas, que incluye “Como p�
 En febrero de 2010 participó de la Fiesta del Lago en El Calafate, provincia de Santa Cruz. A fines de ese mismo mes presidió el jurado en la sección de Folclore del Festival Internacional de la Canción de Viña del Mar, en Chile.
 
 En febrero de 2025 se presentó en la plaza del Festival de Cosquín, donde recibió un premio por sus 20 años como solista.</p>
-
+                </section>
+                <section>
             <h2 id="discografia">Discografía</h2>
 
             <h3 id="discosbanda">Discos con Los Nocheros</h3>
@@ -117,6 +136,27 @@ En febrero de 2025 se presentó en la plaza del Festival de Cosquín, donde reci
             <p>Viaje (2021)</p>
             <p>Principio y Destino (2023)</p>
 
+                    </section>
+                    <section>
+    <h2 id="discusion">Discusión</h2>
+
+    <form id="formulario-comentarios">
+        <label for="nombre-comentario">Nombre:</label>
+        <input type="text" id="nombre-comentario">
+
+        <label for="texto-comentario">Comentario:</label>
+        <textarea id="texto-comentario" maxlength="200"></textarea>
+
+        <p id="contador-caracteres">0 / 200</p>
+
+        <button type="submit">Enviar comentario</button>
+    </form>
+
+    <p id="avisos-comentarios"></p>
+
+    <ul id="lista-comentarios">
+    </ul>
+</section>
         </main>
 
         <footer>
