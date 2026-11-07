@@ -155,3 +155,12 @@ main.tamano-estandar {
 main.tamano-grande {
     font-size: 20px;
 }
+
+/* Estilos de las secciones plegables */
+main h2 {
+    cursor: pointer;
+}
+
+section.colapsada > :not(h2) {
+    display: none;
+}

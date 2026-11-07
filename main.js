@@ -62,3 +62,25 @@ botonTamanoGrande.addEventListener("click", function() {
     botonTamanoPequeno.classList.remove("activo");
     botonTamanoEstandar.classList.remove("activo");
 });
+
+// Funcionalidad de las secciones plegables
+
+const secciones = contenidoPrincipal.querySelectorAll("section");
+
+secciones.forEach(function(seccion) {
+    const tituloSeccion = seccion.querySelector("h2");
+    const flecha = document.createElement("span");
+
+    flecha.textContent = " ▾";
+    tituloSeccion.append(flecha);
+
+    tituloSeccion.addEventListener("click", function() {
+        seccion.classList.toggle("colapsada");
+
+        if (seccion.classList.contains("colapsada")) {
+            flecha.textContent = " ▸";
+        } else {
+            flecha.textContent = " ▾";
+        }
+    });
+});
