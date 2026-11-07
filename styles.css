@@ -164,3 +164,11 @@ main h2 {
 section.colapsada > :not(h2) {
     display: none;
 }
+/* Estilos para los campos con errores */
+.error {
+    border: 2px solid red;
+}
+
+#avisos-comentarios {
+    color: red;
+}
