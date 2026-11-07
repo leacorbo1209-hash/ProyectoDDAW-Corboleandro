@@ -29,3 +29,36 @@ botonModo.addEventListener("click", function() {
         botonModo.textContent = "Modo oscuro";
     }
 });
+
+// Funcionalidad de los tamaños de letra
+
+const botonTamanoPequeno = document.querySelector('[data-tamano="pequeno"]');
+const botonTamanoEstandar = document.querySelector('[data-tamano="estandar"]');
+const botonTamanoGrande = document.querySelector('[data-tamano="grande"]');
+
+botonTamanoPequeno.addEventListener("click", function() {
+    contenidoPrincipal.classList.remove("tamano-estandar", "tamano-grande");
+    contenidoPrincipal.classList.add("tamano-pequeno");
+
+    botonTamanoPequeno.classList.add("activo");
+    botonTamanoEstandar.classList.remove("activo");
+    botonTamanoGrande.classList.remove("activo");
+});
+
+botonTamanoEstandar.addEventListener("click", function() {
+    contenidoPrincipal.classList.remove("tamano-pequeno", "tamano-grande");
+    contenidoPrincipal.classList.add("tamano-estandar");
+
+    botonTamanoEstandar.classList.add("activo");
+    botonTamanoPequeno.classList.remove("activo");
+    botonTamanoGrande.classList.remove("activo");
+});
+
+botonTamanoGrande.addEventListener("click", function() {
+    contenidoPrincipal.classList.remove("tamano-pequeno", "tamano-estandar");
+    contenidoPrincipal.classList.add("tamano-grande");
+
+    botonTamanoGrande.classList.add("activo");
+    botonTamanoPequeno.classList.remove("activo");
+    botonTamanoEstandar.classList.remove("activo");
+});

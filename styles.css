@@ -142,3 +142,16 @@ main.tamano-grande {
     font-weight: bold;
     border: 2px solid #555555;
 }
+/* Estilos de los tamaños de letra */
+
+main.tamano-pequeno {
+    font-size: 14px;
+}
+
+main.tamano-estandar {
+    font-size: 16px;
+}
+
+main.tamano-grande {
+    font-size: 20px;
+}
